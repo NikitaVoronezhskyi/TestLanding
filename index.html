@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Knives Shop"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TestTask</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                    <a class="logo" href=""><img src="/img/Group.svg" alt="logo">Testtask</a>
+                <div class="nav__right">
+                    <button class="btn">Users</button>
+                    <button class="btn">Sign up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section promo">
+                    <div class="promo-block">
+                        <h1 class="common-heading">Test assignment for front-end developer</h1>
+                        <p class="common-text">What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.</p>
+                        <button class="btn">Sign up</button>
+                    </div>
+            </section>
+            <section class="section crew">  
+                    <h2 class="common-heading">Working with GET request</h2>
+                    <div id="userCards" class="cards">
+                    </div>
+                    <button id="getMoreUsers" class="btn">Show more</button>
+            </section>
+            <section class="form section">
+                <h2 class="common-heading">Working with POST request</h2>
+                <form id="newPerson" name="newPerson" class="form__block" action="#">
+                    <input required name="name" placeholder="Your Name" class="form__input" type="text">
+                    <input required name="email" placeholder="Email" class="form__input" type="email">
+                    <input required name="phone" placeholder="Phone" class="form__input" type="tel">
+                    <div class="form__radio">
+                        <legend>Select your position</legend>
+                        <label for="">
+                            <input value="Frontend developer" name="position" type="radio">
+                            <span>Frontend developer</span>
+                        </label>
+                        <label for="">
+                            <input value="Backend developer" name="position" type="radio">
+                            <span>Backend developer</span>
+                        </label>
+                        <label for="">
+                            <input value="Designer" name="position" type="radio">
+                            <span>Designer</span>
+                        </label>
+                        <label for="">
+                            <input value="QA" name="position" type="radio">
+                            <span>QA</span>
+                        </label>
+                    </div>
+                    <div class="form_area">
+                        <label class="label">
+                            <input class="input" type="file" id="file" aria-label="File browser example">
+                            <span class="label-custom"></span>
+                          </label>
+                    </div>
+                    <button id="submitUser" class="btn btn-disabled" type="submit">Sign up</button>
+                </form>
+                <div id="formSent" class="form-sent">
+                    <h2 class="common-heading">User successfully registered</h2>
+                    <img  src="./img/success-image.png" alt="User successfully Registered">
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./db/db.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
