@@ -272,9 +272,10 @@ body {
 /* ----------------------------HEADER END------------------------------- */
 
 .promo{
-  background:url(/img/Rectangle\ 29.png) center center/cover no-repeat;
-  background-blend-mode: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pexels-alexandr-podvalny-1227513.jpg);;
+  background: linear-gradient(hsl(0,100%,0%,0.5),hsl(0,100%,0%,0.5)),url(/img/Rectangle\ 29.png) center center/cover no-repeat;
+
 }
+
 .promo-block{
   display: flex;
   flex-direction: column;
@@ -335,11 +336,20 @@ body {
   border: 1px solid #D0CFCF;
 }
 
+.form__input:valid{
+  border: 2px solid var(--secondary);
+}
+
+/* .form__input:invalid{
+  border: 2px solid red;
+} */
+
 .form__radio{
   display: flex;
   gap: 7px;
   flex-direction: column;
 }
+
 
 
 .input{

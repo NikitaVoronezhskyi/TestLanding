@@ -31,7 +31,7 @@ function userCardTemplate(user){
 
 function renderElement (e,div,where){
     if(where){
-        div.insertAdjacentHTML(where,div,e) = e
+        div.insertAdjacentHTML(where,e,div)
     } else{
         div.innerHTML = e
     }
@@ -53,9 +53,11 @@ submitUser.addEventListener("click", e =>{
      const applyNewUser = renderElement(newUserTemplate,cards,"afterBegin")
      formBlock.classList.add("form-disabled")
      sentBlock.classList.add("form-sent-active")
-     
 })
 
+function validName(name) {
+    
+}
 
 
 
